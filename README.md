@@ -1,14 +1,35 @@
 ## Navn
 
-genbrugsavisen
-
-brugtesokker
-
 den røde avis
+
+# Hjemmeside struktur
 
 ## Forside
 
-nav bar med DRA logo
+### Navbar
+
+Logo
+
+Search bar
+
+Opret en annonce
+
+Log ind
+
+Tilmed
+
+### Body
 
 relevante/promoverede produkter
+
+Produkter
+    - sorter efter anonce alder
+    - sorter efter pris
+    - sorter efter kvalitet
+    - sorter efter flest visninger
+
+#### Side bar
+
+produkt katagorier
+
 
