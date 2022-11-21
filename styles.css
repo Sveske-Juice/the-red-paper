@@ -6,22 +6,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* Nav bar. */
 .nav-container {
   width: 85%;
   margin: auto;
 }
-
-
-.nav-container article {
-  display: flex;
-
-  margin-top: 50px;
-}
-
-.nav-container article div:not(:first-child) {
-  margin-left: 200px; /* Indent main article from menu. */
-}
-
 
 .nav-bar {
   background-color: #161A1D;  
@@ -159,10 +148,11 @@
   transition: 0.1s ease-out;
 }
 
+/* Side menu. */
 .menu-container {
   background-color: #161A1D; 
 
-  width: 25%;
+  width: 20%;
 
   border-radius: 15px;
 
@@ -170,7 +160,7 @@
   padding-bottom: 10px;
 }
 
-.menu-container ul {
+.menu-container > ul {
   background-color: inherit;
   list-style-type: none;
 
@@ -183,7 +173,7 @@
   margin-bottom: 20px;
 }
 
-.menu-container ul li a {
+.menu-container > ul > li > a {
   color: #D3D3D3;
   background-color: inherit;
 
@@ -201,12 +191,75 @@
   cursor: pointer;
 }
 
-.menu-container ul li a:hover {
+.menu-container > ul > li > a:hover {
   color:#A4161A;
   font-size: 100%;
   transition: 0.2s;
 }
 
-.menu-container ul li a i {
+.menu-container > ul > li > a > i {
   background-color: inherit; /* inherit bg color behind logos. */
+}
+
+/* Main article. */
+.nav-container article {
+  display: flex;
+
+  margin-top: 50px;
+}
+
+.nav-container article > div:not(:first-child) {
+  margin-left: 100px; /* Indent main article from side menu. */
+}
+
+/* Product carousel. */
+.carousel-wrapper {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-wrapper .carousel {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.carousel-wrapper > i {
+  color:#161A1D;
+  background-color: #D3D3D3;
+
+  width: 48px;
+  height: 48px;
+
+  position: relative;
+
+  line-height: 48px;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  text-align: center;
+
+  border-radius: 50%;
+}
+
+.carousel-wrapper > i:first-child {
+  left: 20px;
+}
+
+.carousel-wrapper > i:last-child {
+  right: 20px;
+}
+
+.carousel img {
+  height: 256px;
+  width: calc(100% / 4.5);
+
+  margin-left: 10px;
+
+  object-fit: cover;
+}
+
+.carousel img:first-child {
+  margin-left: 0px; /* No indentation for first picture in carousel. */
 }
