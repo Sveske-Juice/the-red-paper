@@ -204,13 +204,29 @@
 /* Main article. */
 .nav-container article {
   display: flex;
+  flex-direction: column;
 
   margin-top: 50px;
 }
 
-.nav-container article > div:not(:first-child) {
+.nav-container article > div:first-child {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-container article > div:first-child > div:nth-child(2) {
   margin-left: 100px; /* Indent main article from side menu. */
 }
+
+/* Hurtigt kode så det matcher pls kig væk lol. */
+.nav-container article > div:not(:first-child) {
+  margin-left: calc(23%); /* Indent main article from side menu. */
+}
+
+.nav-container article > div > div {
+  margin-left: 0px; /* Indent main article from side menu. */
+}
+
 
 /* Product carousel. */
 .carousel-wrapper {
@@ -231,6 +247,8 @@
 
   width: 48px;
   height: 48px;
+
+  flex-shrink: 0;
 
   position: relative;
 
@@ -253,9 +271,9 @@
 
 .carousel img {
   height: 256px;
-  width: calc(100% / 4.5);
+  width: calc(100% / 3.5);
 
-  margin-left: 10px;
+  margin-left: 10px;  
 
   object-fit: cover;
 }
