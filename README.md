@@ -1,10 +1,13 @@
-## Navn
+## Name
 
 den røde avis
 
-# Hjemmeside struktur
+# Pictures
+se examples/
 
-## Forside
+# Website structure
+
+## Landing page
 
 ### Navbar
 
@@ -32,8 +35,9 @@ Produkter
 
     - sorter efter flest visninger
 
-#### Side bar
+#### Sidebar
 
-produkt katagorier
+product categories
 
-
+# Licens
+GNU GPL v3
