@@ -1,3 +1,5 @@
+This is an old school project for a website clone.
+
 ## Name
 
 The Red Paper
